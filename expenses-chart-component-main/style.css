@@ -1,0 +1,119 @@
+:root {
+    --SoftRed: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+
+    /*Neutral*/
+
+    --DarkBrown: hsl(25, 47%, 15%);
+    --MediumBrown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --VeryPaleOrange: hsl(33, 100%, 98%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+html, body{
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--Cream);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1440px;
+    min-width: 375px;
+}
+
+.top-box{
+    width: 27rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--SoftRed);
+    border-radius: 10px;
+    gap: 14.5rem;
+}
+
+.my-bal-box{
+    color: white;
+    padding-left: 1rem;
+}
+
+.main-box{
+    margin-top: 1rem;
+    width: 27rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+}
+
+.statistics{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.9rem;
+}
+
+.day-amount{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spend-bar{
+    width: 2rem;
+    height: 10rem;
+    background-color: var(--SoftRed);
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.spend-bar:active{
+    background-color: var(--Cyan);
+}
+
+.line{
+    margin-top: 1rem;
+    width: 90%;
+    border: 1px solid var(--Cream);
+}
+
+.bottom-box{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 23rem;
+    gap: 9rem;
+}
+
+.compare{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.lil-num{
+    font-weight: bold;
+}
+
+.total-spent{
+    color: var(--MediumBrown);
+}

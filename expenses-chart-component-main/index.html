@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="top-box">
+        <div class="my-bal-box">
+          <p class="balance-title">my balance</p>
+          <h2 class="balance-number">$921.48</h2>
+        </div>
+        <img class="logo" src="images/logo.svg" alt="logo">
+      </div>
+    </header>
+    <main>
+      <div class="main-box">
+        <div class="main-container">
+          <h3 class="title">Speding - Last 7 days</h3>
+          <div class="statistics">
+            <div class="day-amount">
+              <div class="spend-bar" id="mon-bar"></div>
+              <P class="day">mon</P>
+            </div>
+            <div class="day-amount">
+              <div class="spend-bar" id="tue-bar"></div>
+              <P class="day">tue</P>
+            </div>
+            <div class="day-amount">
+              <div class="spend-bar" id="wed-bar"></div>
+              <P class="day">wed</P>
+            </div>
+            <div class="day-amount">
+              <div class="spend-bar" id="thu-bar"></div>
+              <P class="day">thu</P>
+            </div>
+            <div class="day-amount">
+              <div class="spend-bar" id="fri-bar"></div>
+              <P class="day">fri</P>
+            </div>
+            <div class="day-amount">
+              <div class="spend-bar" id="sat-bar"></div>
+              <P class="day">sat</P>
+            </div>
+            <div class="day-amount">
+              <div class="spend-bar" id="sun-bar"></div>
+              <P class="day">sun</P>
+            </div>
+          </div>
+          <hr class="line">
+          <div class="bottom-box">
+            <div class="total-box">
+              <p class="total-spent">total spent</p>
+              <h1>$478.33</h1>
+
+            </div>
+            <div class="compare">
+              <p class="lil-num">+2.4%</p>
+              <p>from last month</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
